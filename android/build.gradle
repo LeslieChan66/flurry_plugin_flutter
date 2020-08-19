@@ -34,8 +34,11 @@ android {
 }
 
 dependencies {
-    implementation 'com.flurry.android:analytics:11.5.0@aar'
     // Recommended to add Google Play Services
     implementation 'com.google.android.gms:play-services-base:15.0.1'
     implementation 'com.google.android.gms:play-services-ads:15.0.1'
+    // Required for Flurry Analytics integration
+    implementation 'com.flurry.android:analytics:12.1.0'
+    // Optional - If you want to use the Ads SDK
+    implementation 'com.flurry.android:ads:12.1.0'
 }
